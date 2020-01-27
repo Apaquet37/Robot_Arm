@@ -14,11 +14,21 @@ servo2 = servo.Servo(pwm2)
 servo3 = servo.Servo(pwm3) 
 servo4 = servo.Servo(pwm4)
 
-dial  = AnalogIn(board.D5)
+dial1 = AnalogIn(board.D5)
+dial2 = AnalogIn(board.D6)
+dial3 = AnalogIn(board.D7)
+dial4 = AnalogIn(board.D8)
 
 def get_voltage(pin):
     return(pin.value*180)/65536
 
 while True:
     time.sleep(.1)
-    myDial = get_voltage(dial)
+    myDial1 = get_voltage(dial1)
+    myDial2 = get_voltage(dial2)
+    myDial3 = get_voltage(dial3)
+    myDial4 = get_voltage(dial4)
+    servo1.angle = myDial1
+    servo2.angle = myDial2
+    servo3.angle = myDial3
+    servo4.angle = myDial4
