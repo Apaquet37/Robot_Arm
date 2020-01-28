@@ -7,4 +7,4 @@
 
 2/7 - rough dimensions figured out on solidworks, 4 servos with potentiometers coded on circuitpython.
 
-2/14
+2/14 - servos and dials wired, processing gui started
