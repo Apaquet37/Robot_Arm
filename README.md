@@ -1,5 +1,5 @@
 # Robot Arm Planning
-> Zoe, Abby, Daeshon
+> Zoe, Abby, Daeshon :robot:
 
 ### Goal
 - Construct a Metro-controlled robot arm from materials in the sigma lab.
