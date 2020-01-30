@@ -1,9 +1,9 @@
 # Robot Arm Planning
 
-#### Goal
+### Goal
 - Construct a Metro-controlled robot arm from materials in the sigma lab.
 
-#### Resources/Materials
+### Resources/Materials
 - 4-6 servos
 - Metro Express
 - 9V battery pack
@@ -13,7 +13,7 @@
 - Potentiometers (for controlling servos) 
 - 3D printer and laser cutter
 
-#### Ideas
+### Ideas
 - Each servo corresponds to the moving parts of the arm (left/right, up/down, open/close)
  - Potentiometers on the base of the arm will control each direction
 - Labels will be printed to indicate what servo it corresponds to
@@ -22,7 +22,7 @@
 - It will use continuous rotation servos
 - Approximate size of box: length = 150 mm, width = 100 mm, height = 80 mm
 
-#### Overview
+### Overview
 - *Solidworks*
   1. Base of the arm
      - Box connected by corner tabs
@@ -41,7 +41,7 @@
   3. Processing gui that controls the servos
   4. Power switch and power led wired with battery pack
   
-#### Scope
+### Scope
 - All of the wiring and code is fairly straightforward
 - Some difficulties may include
   - Figuring out how to fit all of the wiring onto one arduino and maximize space
@@ -49,7 +49,7 @@
   - Constructing gears that fit together and move effectively
   - Adjusting the amount of material used so there isn't too much stress on the arm
   
-#### Schedule
+### Schedule
 1/31 - finished plan & sitting together.
 
 2/7 - rough dimensions figured out on solidworks, 4 servos with potentiometers coded on circuitpython.
