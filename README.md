@@ -22,7 +22,19 @@
 - One side of the box will be able to open with a hinge/knob, in order to allow easy access if the wiring or batteries    had to be changed
 - It will use continuous rotation servos, but will the range will be limited by a photo interrupter so the moving parts don’t hit other parts of the arm
 - Approximate size of box: length = 150 mm, width = 100 mm, height = 80 mm
-#### Scope
+
+#### Overview
+- *Solidworks*
+  1. Base of the arm
+     - Box connected by corner tabs
+     - Properly dimensioned holes for screws, arduino, led, switch, potentiometers
+      - Hinge for one side of the box
+  3. "Claw” that picks up the object
+     - Each side has gears on one end, when they are connected it makes the claws open and close together when only one         of them is being controlled by the servo
+      - The other side has “teeth”
+     - The ridges make it less slippery and less likely to drop the object
+  4. Servo holders 
+      - Material surrounding the base of the servo and connects to the acrylic
 #### Schedule
 1/31 - finished plan & sitting together.
 
