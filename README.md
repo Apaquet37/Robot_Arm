@@ -13,7 +13,15 @@
 - Potentiometers (for controlling servos) 
 - Photo interrupters
 - 3D printer and laser cutter
-#### Outline
+
+#### Ideas
+- Each servo corresponds to the moving parts of the arm (left/right, up/down, open/close)
+ - Potentiometers on the base of the arm will control each direction
+- Labels will be printed to indicate what servo it corresponds to
+- The base of the arm is just a box, containing the arduino and battery pack
+- One side of the box will be able to open with a hinge/knob, in order to allow easy access if the wiring or batteries    had to be changed
+- It will use continuous rotation servos, but will the range will be limited by a photo interrupter so the moving parts don’t hit other parts of the arm
+- Approximate size of box: length = 150 mm, width = 100 mm, height = 80 mm
 #### Scope
 #### Schedule
 1/31 - finished plan & sitting together.
