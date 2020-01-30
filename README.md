@@ -34,12 +34,20 @@
      - The ridges make it less slippery and less likely to drop the object
   3. Servo holders 
       - Material surrounding the base of the servo and connects to the acrylic
-      
+    
 - *Wiring/Code*
   1. Four servos
   2. Potentiometers that control each of the servos
   3. Processing gui that controls the servos
   4. Power switch and power led wired with battery pack
+  
+#### Scope
+- All of the wiring and code is fairly straightforward
+- Some difficulties may include
+  - Figuring out how to fit all of the wiring onto one arduino and maximize space
+  - Making sure the potentiometer is set up to move the servo in the correct direction 
+  - Constructing gears that fit together and move effectively
+  - Adjusting the amount of material used so there isn't too much stress on the arm
   
 #### Schedule
 1/31 - finished plan & sitting together.
