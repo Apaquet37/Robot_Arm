@@ -27,13 +27,13 @@
   1. Base of the arm
      - Box connected by corner tabs
      - Properly dimensioned holes for screws, metro, led, switch, and potentiometers
-      - Hinge for one side of the box
+     - Hinge for one side of the box
   2. "Claw” that picks up the object
      - Each side has gears on one end, when they are connected it makes the claws open and close together when only one         of them is being controlled by the servo
-      - The other side has “teeth”
+     - The other side has “teeth”
      - The ridges make it less slippery and less likely to drop the object
   3. Servo holders 
-      - Material surrounding the base of the servo and connects to the acrylic
+     - Material surrounding the base of the servo and connects to the acrylic
     
 - *Wiring/Code*
   1. Four servos
