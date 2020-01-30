@@ -1,4 +1,5 @@
 # Robot Arm Planning
+> Zoe, Abby, Daeshon
 
 ### Goal
 - Construct a Metro-controlled robot arm from materials in the sigma lab.
@@ -50,6 +51,6 @@
   - Adjusting the amount of material used so there isn't too much stress on the arm
   
 ### Schedule
-- 1/31 - finished plan & sitting together.
-- 2/7 - rough dimensions figured out on solidworks, 4 servos with potentiometers coded on circuitpython.
-- 2/14 - servos and dials wired, processing gui started
+- [x] 1/31 - finished plan & sitting together.
+- [ ] 2/7 - rough dimensions figured out on solidworks, 4 servos with potentiometers coded on circuitpython.
+- [ ] 2/14 - servos and dials wired, processing gui started
