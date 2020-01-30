@@ -11,23 +11,22 @@
 - 5 mm LEDs
 - Switch (for power)
 - Potentiometers (for controlling servos) 
-- Photo interrupters
 - 3D printer and laser cutter
 
 #### Ideas
 - Each servo corresponds to the moving parts of the arm (left/right, up/down, open/close)
  - Potentiometers on the base of the arm will control each direction
 - Labels will be printed to indicate what servo it corresponds to
-- The base of the arm is just a box, containing the arduino and battery pack
+- The base of the arm is just a box, containing the metro and battery pack
 - One side of the box will be able to open with a hinge/knob, in order to allow easy access if the wiring or batteries    had to be changed
-- It will use continuous rotation servos, but will the range will be limited by a photo interrupter so the moving parts don’t hit other parts of the arm
+- It will use continuous rotation servos
 - Approximate size of box: length = 150 mm, width = 100 mm, height = 80 mm
 
 #### Overview
 - *Solidworks*
   1. Base of the arm
      - Box connected by corner tabs
-     - Properly dimensioned holes for screws, arduino, led, switch
+     - Properly dimensioned holes for screws, metro, led, switch, and potentiometers
       - Hinge for one side of the box
   2. "Claw” that picks up the object
      - Each side has gears on one end, when they are connected it makes the claws open and close together when only one         of them is being controlled by the servo
@@ -37,10 +36,10 @@
       - Material surrounding the base of the servo and connects to the acrylic
       
 - *Wiring/Code*
-  1. Power switch to led and battery
-      - Switch should turn on the entire thing, and the led should indicate when it is on
-  2. Potentiometers
-  3. Servos
+  1. Four servos
+  2. Potentiometers that control each of the servos
+  3. Processing gui that controls the servos
+  4. Power switch and power led wired with battery pack
   
 #### Schedule
 1/31 - finished plan & sitting together.
