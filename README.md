@@ -1,11 +1,11 @@
 # Robot Arm Planning
 
 #### Goal
-- Construct an arduino-controlled robot arm from materials in the sigma lab.
+- Construct a Metro-controlled robot arm from materials in the sigma lab.
 
 #### Resources/Materials
 - 4-6 servos
-- Arduino
+- Metro Express
 - 9V battery pack
 - Gears made out of 3mm acrylic
 - 5 mm LEDs
