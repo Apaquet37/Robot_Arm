@@ -36,10 +36,10 @@
      - Material surrounding the base of the servo and connects to the acrylic
     
 - *Wiring/Code*
- 1. Four servos
- 2. Potentiometers that control each of the servos
- 3. Processing gui that controls the servos
- 4. Power switch and power led wired with battery pack
+  1. Four servos
+  2. Potentiometers that control each of the servos
+  3. Processing gui that controls the servos
+  4. Power switch and power led wired with battery pack
   
 ### Scope
 - All of the wiring and code is fairly straightforward
