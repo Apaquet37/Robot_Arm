@@ -40,7 +40,8 @@
   1. Four servos
   2. Potentiometers that control each of the servos
   3. Processing gui that controls the servos
-  4. Power switch and power led wired with battery pack
+  4. Switch that flips between dial control and gui control
+  5. Power switch and power led wired with battery pack
   
 ### Scope
 - All of the wiring and code is fairly straightforward
