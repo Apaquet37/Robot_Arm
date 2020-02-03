@@ -46,7 +46,7 @@
 ### Scope
 - All of the wiring and code is fairly straightforward
 - Some difficulties may include
-  - Figuring out how to fit all of the wiring onto one mettro and maximize space
+  - Figuring out how to fit all of the wiring onto one metro and maximize space
   - Making sure the potentiometer is set up to move the servo in the correct direction 
   - Constructing gears that fit together and move effectively
   - Adjusting the amount of material used so there isn't too much stress on the arm
