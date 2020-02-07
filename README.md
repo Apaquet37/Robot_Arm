@@ -56,3 +56,9 @@
 - [x] 1/31 - finished plan & sitting together.
 - [ ] 2/7 - rough dimensions figured out on solidworks, 4 servos with potentiometers coded on circuitpython.
 - [ ] 2/14 - servos and dials wired, processing gui started
+- [ ] 2/21 - processing gui polished up
+- [ ] 2/28 - switch built in to switch between potentiometer and processing control
+- [ ] 3/6 - battery pack, power switch, and power led wired up
+- [ ] 3/13 - wiring transferred to prototyping shield and new panel mount potentiometers soldered
+- [ ] 3/20 - assembly and finishing touches
+- [ ] 3/27 - assembly and finishing touches
