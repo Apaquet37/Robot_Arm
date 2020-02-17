@@ -22,6 +22,7 @@
 - One side of the box will be able to open with a hinge/knob, in order to allow easy access if the wiring or batteries    had to be changed
 - It will use continuous rotation servos
 - Approximate size of box: length = 150 mm, width = 100 mm, height = 80 mm
+<img src="Media/IMG_4504.jpg" width="400">
 
 ### Overview
 - *Solidworks*
@@ -54,8 +55,8 @@
   
 ### Schedule
 - [x] 1/31 - finished plan & sitting together.
-- [ ] 2/7 - rough dimensions figured out on solidworks, 4 servos with potentiometers coded on circuitpython.
-- [ ] 2/14 - servos and dials wired, processing gui started
+- [x] 2/7 - rough dimensions figured out on solidworks, 4 servos with potentiometers coded on circuitpython.
+- [x] 2/14 - servos and dials wired, processing gui started
 - [ ] 2/21 - processing gui polished up
 - [ ] 2/28 - switch built in to switch between potentiometer and processing control
 - [ ] 3/6 - battery pack, power switch, and power led wired up
