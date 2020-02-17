@@ -54,8 +54,8 @@
   
 ### Schedule
 - [x] 1/31 - finished plan & sitting together.
-- [ ] 2/7 - rough dimensions figured out on solidworks, 4 servos with potentiometers coded on circuitpython.
-- [ ] 2/14 - servos and dials wired, processing gui started
+- [x] 2/7 - rough dimensions figured out on solidworks, 4 servos with potentiometers coded on circuitpython.
+- [x] 2/14 - servos and dials wired, processing gui started
 - [ ] 2/21 - processing gui polished up
 - [ ] 2/28 - switch built in to switch between potentiometer and processing control
 - [ ] 3/6 - battery pack, power switch, and power led wired up
