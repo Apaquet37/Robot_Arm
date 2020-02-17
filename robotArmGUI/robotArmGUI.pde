@@ -6,6 +6,10 @@ int y1 = 75;
 int y2 = 225;
 int w = 100;
 int r = w/2;
+int angle1 = 0;
+int angle2 = 0;
+int angle3 = 0;
+int angle4 = 0;
 
 int servoState = 0;
 //boolean oldButtonState = false;
@@ -57,22 +61,49 @@ void draw() {
     }
   }
   //oldButtonState = false;
+  keyPressed();
+  println("go");
+  println(servoState);
 }
 
 void keyPressed(){
   if(key == CODED){
     if(keyCode == UP){
       if(servoState == 1){
-        
+        angle1 = angle1+5;
+        println(angle1);
+        println("go1");
       }
       else if(servoState == 2){
-        
+        angle2 = angle2+5;
+        println(angle2);
       }
       else if(servoState == 3){
-        
+        angle3 = angle3+5;
+        println(angle3);
       }
       else if(servoState == 4){
-        
+        angle4 = angle4+5;
+        println(angle4);
+      }
+    }
+    if(keyCode == DOWN){
+      if(servoState == 1){
+        angle1 = angle1-5;
+        println(angle1);
+        println("go1");
+      }
+      else if(servoState == 2){
+        angle2 = angle2-5;
+        println(angle2);
+      }
+      else if(servoState == 3){
+        angle3 = angle3-5;
+        println(angle3);
+      }
+      else if(servoState == 4){
+        angle4 = angle4-5;
+        println(angle4);
       }
     }
   }
