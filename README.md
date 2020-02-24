@@ -22,7 +22,7 @@
 - One side of the box will be able to open with a hinge/knob, in order to allow easy access if the wiring or batteries    had to be changed
 - It will use continuous rotation servos
 - Approximate size of box: length = 150 mm, width = 100 mm, height = 80 mm
-<img src="Media/IMG_4504.jpg" width="400" style="transform: rotate(90deg);">
+<img src="Media/IMG_4504.jpg" width="400" style="-webkit-transform: rotate(90deg);">
 
 ### Overview
 - *Solidworks*
