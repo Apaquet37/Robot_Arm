@@ -27,6 +27,9 @@ switch.direction = Direction.INPUT
 switch.pull = Pull.UP
 
 print("go")
+#myStr = "445678|180"
+#print(myStr.index("|"))
+message = ""
 
 if switch.value:
     controlToggle = 0
@@ -48,9 +51,11 @@ while True:
         print(myDial1)
     
     elif controlToggle == 1:
-        x = uart.read(1)
+        x = uart.read(5)
         if x is not None:
             try:
                 myData = x.decode("utf-9")
+                if myData.index("$")==1:
+                    
             except:
                 print("unicode error")

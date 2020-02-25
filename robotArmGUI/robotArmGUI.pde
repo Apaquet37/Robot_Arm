@@ -10,9 +10,11 @@ int angle1 = 0;
 int angle2 = 0;
 int angle3 = 0;
 int angle4 = 0;
+int servoAngle = 0;
 
 int servoState = 0;
 //boolean oldButtonState = false;
+String message = "";
 
 void setup() {
   size(300, 300);
@@ -21,7 +23,7 @@ void setup() {
   myPort = new Serial(this, Serial.list()[2], 9600);
   background(120);
   fill(255, 255, 255);
-  ellipse(x1, y1, w, w);
+  ellipse(x1, y1, w, w); 
   ellipse(x2, y1, w, w);
   ellipse(x1, y2, w, w);
   ellipse(x2, y2, w, w);
@@ -61,7 +63,7 @@ void draw() {
     }
   }
   //oldButtonState = false;
-  keyPressed();
+  //keyPressed();
   println("go");
   println(servoState);
 }
@@ -70,41 +72,53 @@ void keyPressed(){
   if(key == CODED){
     if(keyCode == UP){
       if(servoState == 1){
-        angle1 = angle1+5;
+        angle1 = angle1+1;
         println(angle1);
         println("go1");
+        servoAngle = angle1;
       }
       else if(servoState == 2){
-        angle2 = angle2+5;
+        angle2 = angle2+1;
         println(angle2);
+        servoAngle = angle2;
       }
       else if(servoState == 3){
-        angle3 = angle3+5;
+        angle3 = angle3+1;
         println(angle3);
+        servoAngle = angle3;
       }
       else if(servoState == 4){
-        angle4 = angle4+5;
+        angle4 = angle4+1;
         println(angle4);
+        servoAngle = angle4;
       }
     }
     if(keyCode == DOWN){
       if(servoState == 1){
-        angle1 = angle1-5;
+        angle1 = angle1-1;
         println(angle1);
         println("go1");
+        servoAngle = angle1;
       }
       else if(servoState == 2){
-        angle2 = angle2-5;
+        angle2 = angle2-1;
         println(angle2);
+        servoAngle = angle2;
       }
       else if(servoState == 3){
-        angle3 = angle3-5;
+        angle3 = angle3-1;
         println(angle3);
+        servoAngle = angle3;
       }
       else if(servoState == 4){
-        angle4 = angle4-5;
+        angle4 = angle4-1;
         println(angle4);
+        servoAngle = angle4;
       }
     }
+    // write "4|180"
+    message = servoState+"$"+servoAngle;
+    println(message);
+    myPort.write(message);
   }
 }
