@@ -16,28 +16,32 @@ servo1 = servo.Servo(pwm1)
 servo2 = servo.Servo(pwm2)
 servo3 = servo.Servo(pwm3) 
 servo4 = servo.Servo(pwm4)
+servoState = 0
 
 dial1 = AnalogIn(board.A1)
 dial2 = AnalogIn(board.A2)
 dial3 = AnalogIn(board.A3)
 dial4 = AnalogIn(board.A4)
 
-switch = DigitalInOut(board.D13)
+switch = DigitalInOut(board.D12)
 switch.direction = Direction.INPUT
 switch.pull = Pull.UP
+controlToggle = 0
 
 print("go")
 #myStr = "445678|180"
 #print(myStr.index("|"))
 message = ""
 
-if switch.value:
-    controlToggle = 0
-
 def get_voltage(pin):
     return(pin.value*180)/65536
 
 while True:
+    print(switch.value)
+    if switch.value:
+        controlToggle = 0
+    else:
+        controlToggle = 1
     if controlToggle == 0:
         time.sleep(.1)
         myDial1 = get_voltage(dial1)
@@ -51,11 +55,27 @@ while True:
         print(myDial1)
     
     elif controlToggle == 1:
+        print("switch")
         x = uart.read(5)
         if x is not None:
             try:
                 myData = x.decode("utf-9")
+                print("yes")
+                print(myData)
+                message = myData
                 if myData.index("$")==1:
-                    
+                    print("hi")    
+                    #message.index(0) = servoState
+                    print(servoState)
+                    if servoState == 1:
+                        angle1 = message.index(2)
+                    if servoState == 2:
+                        angle2 = message.index(2)
+                    if servoState == 3:
+                        angle3 = message.index(2)
+                    if servoState == 4:
+                        angle4 = message.index(2)
             except:
                 print("unicode error")
+
+                

@@ -20,7 +20,7 @@ void setup() {
   size(300, 300);
   println("Available serial ports:");
   println(Serial.list());
-  myPort = new Serial(this, Serial.list()[2], 9600);
+  myPort = new Serial(this, Serial.list()[1], 9600);
   background(120);
   fill(255, 255, 255);
   ellipse(x1, y1, w, w); 
@@ -69,7 +69,7 @@ void draw() {
 }
 
 void keyPressed(){
-  if(key == CODED){
+  if((key == CODED) && (servoAngle <=180) && (servoAngle >=0)){
     if(keyCode == UP){
       if(servoState == 1){
         angle1 = angle1+1;
@@ -117,7 +117,7 @@ void keyPressed(){
       }
     }
     // write "4|180"
-    message = servoState+"$"+servoAngle;
+    message = servoState+"$"+nf (servoAngle, 3);
     println(message);
     myPort.write(message);
   }
