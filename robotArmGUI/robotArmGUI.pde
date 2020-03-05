@@ -69,48 +69,48 @@ void draw() {
 }
 
 void keyPressed(){
-  if((key == CODED) && (servoAngle <=180) && (servoAngle >=0)){
+  if((key == CODED) && (servoAngle <= 180) && (servoAngle >= 0)){
     if(keyCode == UP){
-      if(servoState == 1){
+      if(servoState == 1 && angle1 < 180){
         angle1 = angle1+1;
         println(angle1);
         println("go1");
         servoAngle = angle1;
       }
-      else if(servoState == 2){
+      else if(servoState == 2 && angle2 < 180){
         angle2 = angle2+1;
         println(angle2);
         servoAngle = angle2;
       }
-      else if(servoState == 3){
+      else if(servoState == 3 && angle3 < 180){
         angle3 = angle3+1;
         println(angle3);
         servoAngle = angle3;
       }
-      else if(servoState == 4){
+      else if(servoState == 4 && angle4 < 180){
         angle4 = angle4+1;
         println(angle4);
         servoAngle = angle4;
       }
     }
     if(keyCode == DOWN){
-      if(servoState == 1){
+      if(servoState == 1 && angle1 > 0){
         angle1 = angle1-1;
         println(angle1);
         println("go1");
         servoAngle = angle1;
       }
-      else if(servoState == 2){
+      else if(servoState == 2 && angle2 > 0){
         angle2 = angle2-1;
         println(angle2);
         servoAngle = angle2;
       }
-      else if(servoState == 3){
+      else if(servoState == 3 && angle3 > 0){
         angle3 = angle3-1;
         println(angle3);
         servoAngle = angle3;
       }
-      else if(servoState == 4){
+      else if(servoState == 4 && angle4 > 0){
         angle4 = angle4-1;
         println(angle4);
         servoAngle = angle4;

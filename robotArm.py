@@ -31,7 +31,6 @@ controlToggle = 0
 print("go")
 #myStr = "445678|180"
 #print(myStr.index("|"))
-message = ""
 
 def get_voltage(pin):
     return(pin.value*180)/65536
@@ -62,19 +61,23 @@ while True:
                 myData = x.decode("utf-9")
                 print("yes")
                 print(myData)
-                message = myData
                 if myData.index("$")==1:
                     print("hi")    
-                    #message.index(0) = servoState
+                    servoState = myData[0]
                     print(servoState)
-                    if servoState == 1:
-                        angle1 = message.index(2)
-                    if servoState == 2:
-                        angle2 = message.index(2)
-                    if servoState == 3:
-                        angle3 = message.index(2)
-                    if servoState == 4:
-                        angle4 = message.index(2)
+                    if servoState == "1":
+                        angle1 = myData[2:]
+                        servo1.angle = angle1
+                        print(angle1)
+                    if servoState == "2":
+                        angle2 = myData[2:]
+                        servo2.angle = angle2
+                    if servoState == "3":
+                        angle3 = myData[2]
+                        servo3.angle = angle3
+                    if servoState == "4":
+                        angle4 = myData[2:]
+                        servo4.angle = angle4
             except:
                 print("unicode error")
 
