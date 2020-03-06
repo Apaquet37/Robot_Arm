@@ -67,17 +67,20 @@ while True:
                     print(servoState)
                     if servoState == "1":
                         angle1 = myData[2:]
-                        servo1.angle = angle1
+                        servo1.angle = int (angle1)
                         print(angle1)
                     if servoState == "2":
+                        
                         angle2 = myData[2:]
-                        servo2.angle = angle2
+                        print(angle2)
+                        servo2.angle = int (angle2)
+                        print(angle2)
                     if servoState == "3":
-                        angle3 = myData[2]
-                        servo3.angle = angle3
+                        angle3 = myData[2:]
+                        servo3.angle = int (angle3)
                     if servoState == "4":
                         angle4 = myData[2:]
-                        servo4.angle = angle4
+                        servo4.angle = int (angle4)
             except:
                 print("unicode error")
 
