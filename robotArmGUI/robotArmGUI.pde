@@ -17,7 +17,7 @@ int servoState = 0;
 String message = "";
 
 void setup() {
-  size(300, 300);
+  size(300, 350);
   println("Available serial ports:");
   println(Serial.list());
   myPort = new Serial(this, Serial.list()[1], 9600);
@@ -33,6 +33,8 @@ void setup() {
   text("Servo 2", 200, 80);
   text("Servo 3", 50, 230);
   text("Servo 4", 200, 230);
+  text("Select a servo and then use up and down", 0, 325);
+  text("arrows to control angle.", 60, 340);
 }
 
 void draw() {
