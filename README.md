@@ -1,8 +1,14 @@
-# Robot Arm Planning
+# Robot Arm 
 > Zoe, Abby, Daeshon :robot:
+
+## Planning
 
 ### Goal
 - Construct a Metro-controlled robot arm from materials in the sigma lab.
+
+### Background
+- We chose to do a relatively straight forward robot arm design becuase that is what we felt most spoke to us as a group, and the best way for us to use all of our talents together. We like the idea that this is a project that will always be useful and relevant, and that we will be able to accomplish it in the given timeframe. Additionally, we like that this robot arm can be very versatile, whether it is used for picking up objects or just as a toy to display. Lastly, I personally (Abby) love this idea because I can see so many potential uses for it in various BACON outreach activities. I feel that it would be super helpful to have a working robot arm lying around the lab that I can trust, understand, and explain well when taking it to outreach events.
+- Going into the history of robot arms is super interesting. The robotic or mechanical arm was something that was originally designed to serve a purpose, not as a side invention just for fun, and it hasn't strayed from that purpose ever since. Whether they are meant for manufacturing, surgery, or prosthetics. It is very interesting that the robot arm has so many different and important uses.
 
 ### Resources/Materials
 - 4-6 servos
@@ -52,7 +58,9 @@
   - Constructing gears that fit together and move effectively
   - Adjusting the amount of material used so there isn't too much stress on the arm
   - Making the gui precise and user friendly
-  
+
+## Documentation
+
 ### Schedule
 - [x] 1/31 - finished plan & sitting together.
 - [x] 2/7 - rough dimensions figured out on solidworks, 4 servos with potentiometers coded on circuitpython.
@@ -63,3 +71,6 @@
 - [ ] 3/13 - wiring transferred to prototyping shield and new panel mount potentiometers soldered
 - [ ] 3/20 - assembly and finishing touches
 - [ ] 3/27 - assembly and finishing touches
+
+### Update
+- As of March 13, 2020, when we had our last day of in person school for the year, our project was progressing quite well. The code, including manual potentiometer control of four servos, as well as a processing GUI for control, were fully functional and completed. Additionally, that last week, Abby made a fritzing for all her wiring and Daeshon started soldering some of the panel mounted components that would be necessary in the final project. Zoe contined to work on the SolidWorks, and we have a pretty solid assembly that includes a box at the bottom, and a few tiers of arm built up. 
